@@ -7,7 +7,7 @@ buttons.forEach((item,idx) => {
         hideAllItems();
 
         item.classList.add('active');
-        content[idx].classList.add('opened');
+        content[idx].classList.add('show');
     })
 })
 
@@ -15,5 +15,5 @@ function hideAllItems() {
     buttons.forEach(item => item.classList.remove('active'));
 }
 function hideAllContents() {
-    content.forEach(content => content.classList.remove('opened'));
+    content.forEach(content => content.classList.remove('show'));
 }
